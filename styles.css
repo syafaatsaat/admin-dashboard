@@ -1,0 +1,89 @@
+:root {
+    --nav-gap: 0.8em;
+    --sidebar-bg-color: rgb(46, 46, 46);/*rgb(24, 103, 69); */
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 12px;
+}
+
+img {
+    height: 24px;
+    width: 24px;
+}
+
+.sidebar img {
+    filter: brightness(0) invert(1);
+}
+
+.logo,
+.navbar li {
+    display: grid;
+    grid-template-columns: 8em auto;
+    align-items: center;
+    gap: var(--nav-gap);
+}
+
+.logo {
+    margin-bottom: 2em;
+}
+
+.logo p {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.logo img {
+    height: 5em;
+    width: 5em;
+    padding: 0;
+    justify-self: center;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template: 20% 80% / 20% 80%;
+}
+
+.sidebar {
+    padding: 2em;
+    grid-row-end: span 2;
+    background-color: var(--sidebar-bg-color);
+    color: white;
+    font-weight: bold;
+}
+
+.navbar {
+    display: grid;
+    gap: 5em;
+}
+
+.navbar > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 2em;
+}
+
+.navbar p {
+    font-size: 2em;
+    margin: 0;
+}
+
+.navbar img {
+    height: 2.5em;
+    width: 2.5em;
+    justify-self: center;
+}
