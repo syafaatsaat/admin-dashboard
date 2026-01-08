@@ -1,13 +1,16 @@
 :root {
     --nav-gap: 0.8em;
     --sidebar-bg-color: rgb(46, 46, 46);/*rgb(24, 103, 69); */
+    --searchbar-bg-color: rgb(199, 199, 199);
 }
 
 html,
 body {
     width: 100vw;
-    height: 100vh;
+    max-width: 100%;
     margin: 0;
+    padding: 0;
+    border: 0;
 
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
@@ -18,8 +21,8 @@ body {
 }
 
 img {
-    height: 2em;
-    width: 2em;
+    height: 2.5em;
+    width: 2.5em;
 }
 
 .sidebar img {
@@ -52,8 +55,9 @@ img {
 }
 
 .container {
+    width: 100%;
     display: grid;
-    grid-template: 20% 80% / 20% 80%;
+    grid-template: repeat(2, auto) / 20% 80%;
 }
 
 .sidebar {
@@ -98,4 +102,98 @@ img {
 .profile-pic.mini {
     height: 5em;
     width: 5em;
+}
+
+.header {
+    display: grid;
+    grid-template: 5em 6em / 70% auto;
+    padding: 2em 4em;
+    gap: 2em;
+}
+
+.search-bar {
+    display: grid;
+    grid-template-columns: 4em auto;
+    align-items: center;
+}
+
+.search-bar > input {
+    height: 3em;
+    width: 90%;
+    background-color: var(--searchbar-bg-color);
+    border: 0;
+    border-radius: 2em;
+    padding: 1em;
+    font-size: 1.25em;
+}
+
+.profile-alarm {
+    display: grid;
+    grid-template-columns: 2.5em 5em auto;
+    align-items: center;
+    justify-content: end;
+    gap: 2em;
+}
+
+.profile-alarm > button {
+    height: 2.5em;
+    width: 2.5em;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+}
+
+.profile-alarm > p {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.user-info {
+    display: grid;
+    grid-template: 50% 50% / 6em auto;
+    gap: 0.5em 2em;
+    height: 6em;
+}
+
+.user-info > .profile-pic {
+    grid-row-end: span 2;
+    justify-self: center;
+    align-self: center;
+}
+
+.user-info > p {
+    margin: 0;
+}
+
+.hello {
+    grid-column: 2 3;
+    align-self: self-end;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.username {
+    grid-row: 2 3;
+    grid-column: 2 3;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: end;
+    gap: 2em;
+}
+
+.buttons > button {
+    font-size: 1.25em;
+    font-weight: bold;
+    height: 2.5em;
+    color: white;
+    background-color: var(--sidebar-bg-color);
+    border: 0;
+    border-radius: 2em;
 }
