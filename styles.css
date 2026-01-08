@@ -18,8 +18,8 @@ body {
 }
 
 img {
-    height: 24px;
-    width: 24px;
+    height: 2em;
+    width: 2em;
 }
 
 .sidebar img {
@@ -80,10 +80,22 @@ img {
 .navbar p {
     font-size: 2em;
     margin: 0;
+    font-weight: 500;
 }
 
 .navbar img {
     height: 2.5em;
     width: 2.5em;
     justify-self: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    height: 6em;
+    width: 6em;
+}
+
+.profile-pic.mini {
+    height: 5em;
+    width: 5em;
 }
