@@ -2,6 +2,7 @@
     --nav-gap: 0.8rem;
     --sidebar-bg-color: rgb(46, 46, 46);/*rgb(24, 103, 69); */
     --searchbar-bg-color: rgba(227, 227, 227, 0.794);
+    --sub-text-color: rgb(68, 68, 68);
 }
 
 html,
@@ -209,7 +210,8 @@ img {
 }
 
 .projects,
-.announcements {
+.announcements,
+.trending {
     display: grid;
     grid-template-rows: 1.5rem auto;
     gap: 2rem;
@@ -279,19 +281,36 @@ img {
     max-height: 4.5rem;
     width: 100%;
     margin: 0;
+    color: var(--sub-text-color);
+}
+
+.project-description {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    max-height: 6.25rem;
 }
 
 .announcements {
     height: max-content;
 }
 
-.announcement-items {
+.announcement-items,
+.trending-items {
     background-color: white;
     color: black;
     border-radius: 0.5rem;
-    padding: 1rem 2rem;
     display: grid;
+}
+
+.announcement-items {
+    padding: 1rem 2rem;
     grid-template-rows: repeat(3, auto);
+}
+
+.trending-items {
+    padding: 2rem;
+    grid-template-rows: repeat(4, 5rem);
+    gap: 2em;
 }
 
 .announcement {
@@ -303,4 +322,29 @@ img {
 
 .announcement:first-child ~ .announcement {
     border-top: 1px solid var(--searchbar-bg-color);
+}
+
+.user {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 5rem auto;
+    gap: 0 1rem;
+}
+
+.user > img {
+    grid-row-end: span 2;
+}
+
+.user > p {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.user p:first-of-type {
+    font-weight: bold;
+    align-self: self-end;
+}
+
+.user p:last-of-type {
+    color: var(--sub-text-color);
 }
