@@ -1,7 +1,7 @@
 :root {
     --nav-gap: 0.8em;
     --sidebar-bg-color: rgb(46, 46, 46);/*rgb(24, 103, 69); */
-    --searchbar-bg-color: rgb(199, 199, 199);
+    --searchbar-bg-color: rgba(227, 227, 227, 0.794);
 }
 
 html,
@@ -151,7 +151,7 @@ img {
 
 .user-info {
     display: grid;
-    grid-template: 50% 50% / 6em auto;
+    grid-template: 40% 60% / 6em auto;
     gap: 0.5em 2em;
     height: 6em;
 }
@@ -167,15 +167,15 @@ img {
 }
 
 .hello {
-    grid-column: 2 3;
+    /* grid-column: 2 3; */
     align-self: self-end;
     font-size: 1.5em;
     font-weight: 500;
 }
 
 .username {
-    grid-row: 2 3;
-    grid-column: 2 3;
+    /* grid-row: 2 3;
+    grid-column: 2 3; */
     font-size: 2.5em;
     font-weight: bold;
 }
