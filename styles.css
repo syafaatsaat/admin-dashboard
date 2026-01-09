@@ -1,5 +1,5 @@
 :root {
-    --nav-gap: 0.8em;
+    --nav-gap: 0.8rem;
     --sidebar-bg-color: rgb(46, 46, 46);/*rgb(24, 103, 69); */
     --searchbar-bg-color: rgba(227, 227, 227, 0.794);
 }
@@ -22,8 +22,8 @@ body {
 }
 
 img {
-    height: 2.5em;
-    width: 2.5em;
+    height: 2.5rem;
+    width: 2.5rem;
 }
 
 .sidebar img {
@@ -33,23 +33,23 @@ img {
 .logo,
 .navbar li {
     display: grid;
-    grid-template-columns: 8em auto;
+    grid-template-columns: 8rem auto;
     align-items: center;
     gap: var(--nav-gap);
 }
 
 .logo {
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
 }
 
 .logo p {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     margin: 0;
 }
 
 .logo img {
-    height: 5em;
-    width: 5em;
+    height: 5rem;
+    width: 5rem;
     padding: 0;
     justify-self: center;
     margin: 0;
@@ -62,7 +62,7 @@ img {
 }
 
 .sidebar {
-    padding: 2em;
+    padding: 2rem;
     grid-row-end: span 2;
     background-color: var(--sidebar-bg-color);
     color: white;
@@ -71,7 +71,7 @@ img {
 
 .navbar {
     display: grid;
-    gap: 5em;
+    gap: 5rem;
 }
 
 .navbar > ul {
@@ -79,82 +79,82 @@ img {
     margin: 0;
     padding: 0;
     display: grid;
-    gap: 2em;
+    gap: 2rem;
 }
 
 .navbar p {
-    font-size: 2em;
+    font-size: 2rem;
     margin: 0;
     font-weight: 500;
 }
 
 .navbar img {
-    height: 2.5em;
-    width: 2.5em;
+    height: 2.5rem;
+    width: 2.5rem;
     justify-self: center;
 }
 
 .profile-pic {
     border-radius: 50%;
-    height: 6em;
-    width: 6em;
+    height: 6rem;
+    width: 6rem;
 }
 
 .profile-pic.mini {
-    height: 5em;
-    width: 5em;
+    height: 5rem;
+    width: 5rem;
 }
 
 .header {
     display: grid;
-    grid-template: 5em 6em / 70% auto;
-    padding: 2em 4em;
-    gap: 2em;
+    grid-template: 5rem 6rem / 70% auto;
+    padding: 2rem 4rem;
+    gap: 2rem;
 }
 
 .search-bar {
     display: grid;
-    grid-template-columns: 4em auto;
+    grid-template-columns: 4rem auto;
     align-items: center;
 }
 
 .search-bar > input {
-    height: 3em;
+    height: 3rem;
     width: 90%;
     background-color: var(--searchbar-bg-color);
     border: 0;
-    border-radius: 2em;
-    padding: 1em;
-    font-size: 1.25em;
+    border-radius: 2rem;
+    padding: 1rem;
+    font-size: 1.25rem;
 }
 
 .profile-alarm {
     display: grid;
-    grid-template-columns: 2.5em 5em auto;
+    grid-template-columns: 2.5rem 5rem auto;
     align-items: center;
     justify-content: end;
-    gap: 2em;
+    gap: 2rem;
 }
 
 .profile-alarm > button {
-    height: 2.5em;
-    width: 2.5em;
+    height: 2.5rem;
+    width: 2.5rem;
     background-color: transparent;
     border: 0;
     padding: 0;
 }
 
 .profile-alarm > p {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: bold;
     margin: 0;
 }
 
 .user-info {
     display: grid;
-    grid-template: 40% 60% / 6em auto;
-    gap: 0.5em 2em;
-    height: 6em;
+    grid-template: 40% 60% / 6rem auto;
+    gap: 0.5rem 2rem;
+    height: 6rem;
 }
 
 .user-info > .profile-pic {
@@ -170,14 +170,14 @@ img {
 .hello {
     /* grid-column: 2 3; */
     align-self: self-end;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
 .username {
     /* grid-row: 2 3;
     grid-column: 2 3; */
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
@@ -186,45 +186,51 @@ img {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: end;
-    gap: 2em;
+    gap: 2rem;
 }
 
 .buttons > button {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: bold;
-    height: 2.5em;
+    height: 2.5rem;
     color: white;
     background-color: var(--sidebar-bg-color);
     border: 0;
-    border-radius: 2em;
+    border-radius: 2rem;
 }
 
 .main-content {
-    padding: 2em;
+    padding: 2rem;
     display: grid;
-    grid-template: repeat(2, calc(50% - 1em)) / calc(70% - 1em) calc(30% - 1em);
-    gap: 2em;
+    grid-template: repeat(2, auto) / calc(70% - 1rem) calc(30% - 1rem);
+    gap: 2rem;
     background-color: rgb(27, 27, 27);
     color: white;
 }
 
+.projects,
+.announcements {
+    display: grid;
+    grid-template-rows: 1.5rem auto;
+    gap: 2rem;
+}
+
 .projects {
     grid-row-end: span 2;
-    display: grid;
-    grid-template-rows: 1.5em auto;
-    gap: 2em;
 }
 
 .section-header,
-.project-title {
-    font-size: 1.5em;
+.project-title,
+.announcement-title {
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 .project-items {
     display: grid;
-    grid-template-columns: repeat(2, calc(50% - 1em));
-    gap: 2em;
+    grid-template-columns: repeat(2, calc(50% - 1rem));
+    grid-template-rows: repeat(3, 18rem);
+    gap: 2rem;
     color: black;
 }
 
@@ -235,8 +241,8 @@ img {
 .project-buttons > button {
     background-color: transparent;
     border: 0;
-    height: 3em;
-    width: 3em;
+    height: 3rem;
+    width: 3rem;
 }
 
 .project-buttons img {
@@ -252,23 +258,49 @@ img {
         white 2%,
         white 100%
     );
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
 
     display: grid;
-    grid-template-rows: 1.5em auto 3em;
-    gap: 1em;
+    grid-template-rows: 1.5rem 7.5rem 3rem;
+    gap: 1rem;
+    height: max-content;
 }
 
-.project-description {
+.project-description,
+.summary {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3; /* Specify the number of lines */
     -webkit-box-orient: vertical;
 
-    font-size: 1.5em;
-    line-height: 1.5em;
-    max-height: 4.5em;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    max-height: 4.5rem;
     width: 100%;
     margin: 0;
+}
+
+.announcements {
+    height: max-content;
+}
+
+.announcement-items {
+    background-color: white;
+    color: black;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+}
+
+.announcement {
+    display: grid;
+    grid-template-rows: 1.5rem 4.5rem;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.announcement:first-child ~ .announcement {
+    border-top: 1px solid var(--searchbar-bg-color);
 }
