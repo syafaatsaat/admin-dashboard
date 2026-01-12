@@ -3,6 +3,7 @@
     --sidebar-bg-color: rgb(46, 46, 46);/*rgb(24, 103, 69); */
     --searchbar-bg-color: rgba(227, 227, 227, 0.794);
     --sub-text-color: rgb(68, 68, 68);
+    --content-bg-color: rgb(27, 27, 27);
 }
 
 html,
@@ -204,7 +205,7 @@ img {
     display: grid;
     grid-template: repeat(2, auto) / calc(70% - 1rem) calc(30% - 1rem);
     gap: 2rem;
-    background-color: rgb(27, 27, 27);
+    background-color: black;
     color: white;
 }
 
@@ -236,7 +237,7 @@ img {
     grid-template-columns: repeat(2, calc(50% - 1rem));
     grid-template-rows: repeat(3, 18.5rem);
     gap: 2rem;
-    color: black;
+    color: white;
 }
 
 .project-buttons {
@@ -253,15 +254,16 @@ img {
 .project-buttons img {
     height: 100%;
     width: 100%;
+    filter: brightness(0) invert(1);
 }
 
 .project {
     padding: 2em;
     background: linear-gradient(to right,
-        gray 0%,
-        gray 2%,
+        white 0%,
         white 2%,
-        white 100%
+        var(--content-bg-color) 2%,
+        var(--content-bg-color) 100%
     );
     border-radius: 0.5rem;
 
@@ -284,7 +286,7 @@ img {
     max-height: 4.5rem;
     width: 100%;
     margin: 0;
-    color: var(--sub-text-color);
+    color: rgb(200, 200, 200);
 }
 
 .project-description {
@@ -299,8 +301,8 @@ img {
 
 .announcement-items,
 .trending-items {
-    background-color: white;
-    color: black;
+    background-color: var(--content-bg-color);
+    color: white;
     border-radius: 0.5rem;
     display: grid;
 }
@@ -349,5 +351,5 @@ img {
 }
 
 .user p:last-of-type {
-    color: var(--sub-text-color);
+    color: rgb(200, 200, 200);
 }
