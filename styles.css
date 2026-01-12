@@ -63,7 +63,7 @@ img {
 }
 
 .sidebar {
-    padding: 2rem;
+    padding: 1rem 2rem;
     grid-row-end: span 2;
     background-color: var(--sidebar-bg-color);
     color: white;
@@ -109,8 +109,7 @@ img {
 .header {
     display: grid;
     grid-template: 5rem 6rem / 70% auto;
-    padding: 2rem 4rem;
-    gap: 2rem;
+    padding: 1rem 4rem;
 }
 
 .search-bar {
@@ -153,7 +152,7 @@ img {
 
 .user-info {
     display: grid;
-    grid-template: 40% 60% / 6rem auto;
+    grid-template: calc(40% - 0.25rem) calc(60% - 0.25rem) / 6rem auto;
     gap: 0.5rem 2rem;
     height: 6rem;
 }
@@ -221,8 +220,12 @@ img {
     grid-row-end: span 2;
 }
 
+.project-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 .section-header,
-.project-title,
 .announcement-title {
     font-size: 1.5rem;
     font-weight: bold;
@@ -231,7 +234,7 @@ img {
 .project-items {
     display: grid;
     grid-template-columns: repeat(2, calc(50% - 1rem));
-    grid-template-rows: repeat(3, 18rem);
+    grid-template-rows: repeat(3, 18.5rem);
     gap: 2rem;
     color: black;
 }
@@ -263,7 +266,7 @@ img {
     border-radius: 0.5rem;
 
     display: grid;
-    grid-template-rows: 1.5rem 7.5rem 3rem;
+    grid-template-rows: 2rem 7.5rem 3rem;
     gap: 1rem;
     height: max-content;
 }
