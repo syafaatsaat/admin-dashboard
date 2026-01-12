@@ -62,11 +62,11 @@ img {
 .container {
     width: 100%;
     display: grid;
-    grid-template: repeat(2, auto) / 20% 80%;
+    grid-template: 15rem auto / 20% 80%;
 }
 
 .sidebar {
-    padding: 1rem 2rem;
+    padding: 2rem;
     grid-row-end: span 2;
     background-color: var(--sidebar-bg-color);
     color: white;
@@ -112,7 +112,7 @@ img {
 .header {
     display: grid;
     grid-template: 5rem 6rem / 70% auto;
-    padding: 1rem 2rem;
+    padding: 2rem;
     background-color: black;
     color: white;
 }
